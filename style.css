@@ -1,0 +1,83 @@
+/* Загальні стилі */ 
+     body { 
+       margin: 0; 
+       padding: 0; 
+       font-family: 'Arial', sans-serif; 
+       background: linear-gradient(135deg, #b92b27, #1565c0); 
+       color: #fff; 
+       text-align: center; 
+       overflow-x: hidden; 
+     } 
+     /* Контейнер листівки */ 
+     .card { 
+       max-width: 800px; 
+       margin: 50px auto; 
+       padding: 20px; 
+       background: rgba(255, 255, 255, 0.1); 
+       border: 2px solid rgba(255, 255, 255, 0.3); 
+       border-radius: 15px; 
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+       animation: fadeIn 2s ease; 
+     } 
+     /* Заголовок */ 
+     h1 { 
+       font-size: 36px; 
+       margin-bottom: 10px; 
+       text-transform: uppercase; 
+       letter-spacing: 2px; 
+       animation: glow 2s infinite alternate; 
+     } 
+     /* Текст привітання */ 
+     p { 
+       font-size: 18px; 
+       line-height: 1.8; 
+       margin: 20px 0; 
+     } 
+     /* Відео */ 
+     .video-container { 
+       margin-top: 20px; 
+     } 
+     video { 
+       max-width: 100%; 
+       border: 2px solid #fff; 
+       border-radius: 10px; 
+       transition: transform 0.3s ease; 
+     } 
+     video:hover { 
+       transform: scale(1.05); 
+     } 
+     /* Анімація заголовка */ 
+     @keyframes glow { 
+       from { 
+         text-shadow: 0 0 10px #fff, 0 0 20px #ff3, 0 0 30px #ff3; 
+       } 
+       to { 
+         text-shadow: 0 0 20px #ff3, 0 0 30px #ff3, 0 0 40px #ff3; 
+       } 
+     } 
+     /* Анімація fadeIn */ 
+     @keyframes fadeIn { 
+       from { 
+         opacity: 0; transform: translateY(-20px); 
+       } 
+       to { 
+         opacity: 1; transform: translateY(0); 
+       } 
+     } 
+     /* Кнопка */ 
+     .button { 
+       display: inline-block; 
+       margin-top: 20px; 
+       padding: 10px 20px; 
+       font-size: 16px; 
+       color: #fff; 
+       background: #ff3; 
+       border: none; 
+       border-radius: 5px; 
+       text-decoration: none; 
+       transition: background 0.3s ease, transform 0.3s ease; 
+     } 
+     .button:hover { 
+       background: #ffc107; 
+       transform: translateY(-3px); 
+     }
